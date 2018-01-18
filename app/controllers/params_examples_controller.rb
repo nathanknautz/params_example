@@ -6,6 +6,10 @@ class ParamsExamplesController < ApplicationController
     render json: {message: input_message, message_2:input_message_2}
   end
 
+  def segment_params_method
+    input_message = params[:this_is_a_variable]
+
+    render json: {message: input_message}
+  end
 
 end
-qpi
